@@ -1,8 +1,20 @@
 {{ define "main" }}
-  <h2>{{ .Title }}</h2>
-  <ul>
-    {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
+<h1 class="w3-container"><b>My Projects</b></h1>
+
+<!-- Photo Grid -->
+<div class="w3-row-padding">
+
+  {{ range .Pages }}
+  <div class="w3-third w3-container w3-margin-bottom">
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>{{ .Title }}</b></p>
+      <p>{{ .Params.description }}</p>
+      <a href="{{ .RelPermalink }}" class="w3-button w3-teal w3-small">Read more</a>
+    </div>
+  </div>
+  
+  {{ end }}
+
+</div>
 {{ end }}

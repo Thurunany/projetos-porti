@@ -3,8 +3,8 @@ date = '2025-06-12T18:28:09-03:00'
 draft = false
 image = "/images/urso.jpg"
 description = "A real-time chat app using WebSockets and Go."
-title = 'Project 1'
+title = 'Project 2'
 +++
 
-Description of my first awesome project.
-This is a full description of the weather app project.
+
+teste

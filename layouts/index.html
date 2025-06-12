@@ -1,4 +1,23 @@
 {{ define "main" }}
-  <h2>Welcome!</h2>
-  <p>This is my custom portfolio homepage built with Hugo.</p>
+<!-- Header -->
+<header id="portfolio">
+  <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <p class="w3-text-grey">Projects I'm proud of</p>
+  </div>
+</header>
+
+<!-- Photo Grid -->
+<div class="w3-row-padding">
+  {{ range where .Site.RegularPages "Section" "projects" }}
+  <div class="w3-third w3-container w3-margin-bottom">
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>{{ .Title }}</b></p>
+      <p>{{ .Params.description }}</p>
+      <a href="{{ .RelPermalink }}" class="w3-button w3-teal w3-small">Read more</a>
+    </div>
+  </div>
+  {{ end }}
+</div>
 {{ end }}
