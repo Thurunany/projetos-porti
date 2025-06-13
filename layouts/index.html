@@ -11,7 +11,7 @@
 <div class="w3-row-padding">
   {{ range first 6 (where .Site.RegularPages "Section" "projects") }}
   <div class="w3-third w3-container w3-margin-bottom">
-    <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width:100%" class="w3-hover-opacity">
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width:405px; height: 250px; display: block; margin: 0 auto;" class="w3-hover-opacity w3-round">
     <div class="w3-container w3-white">
       <p><b>{{ .Title }}</b></p>
       <p>{{ .Params.description }}</p>
@@ -26,15 +26,14 @@
     <i class="fa fa-th-large w3-margin-right"></i>See More Projects
   </a>
 </div>
-<hr class="w3-opacity">
 
 <!-- About Me Section -->
   <h4><b>About Me</b></h4>
-  <p>
-    Hi, I'm Thuany — a developer working with DevOps, cloud, and data.
-    I build and maintain CI/CD pipelines, automate processes, and support data-driven solutions using tools like Azure, Jenkins, SQL, and Python.
-    I enjoy improving systems, learning new tech, and creating tools that make work easier.
-  </p>
+    <p>
+      Hi, I'm Thuany — a developer working with DevOps, cloud, and data.
+      I build and maintain CI/CD pipelines, automate processes, and support data-driven solutions using tools like Azure, Jenkins, SQL, and Python.
+      I enjoy improving systems, learning new tech, and creating tools that make work easier.
+    </p>
   <hr>
 </div>
 {{ end }}
