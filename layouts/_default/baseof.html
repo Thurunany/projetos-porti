@@ -16,11 +16,11 @@
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white" style="width:300px;" id="mySidebar"><br>
   <div class="w3-container">
-    <img src="/images/yo.jpg" style="width:100%;" class="w3-round"><br><br>
+    <img src="{{ "images/yo.jpg" | absURL }}" style="width:100%;" class="w3-round"><br><br>
     <h4 href="/"><b >THUANY </b></h4>
   </div>
   <div class="w3-bar-block">
-    <a href="{{ "projetos-porti" | relURL }}" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+    <a href="{{ "/" | relURL }}" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
       <i class="fa fa-home fa-fw w3-margin-right"></i>HOME
     </a>
     <a href="{{ "projects" | relURL }}"  onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
