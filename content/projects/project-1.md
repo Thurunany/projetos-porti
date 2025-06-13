@@ -21,7 +21,7 @@ This site was created using **[Hugo](https://gohugo.io/)**, a fast and flexible 
 
 The goal of this project was to create a clean and professional space to showcase my work, while learning more about Hugo's templating system and static site architecture.
 
-<img src="{{ "/images/portifolio.png" | absURL }}" alt="home page" style="width:100%; display: block; margin: 0 auto;">
+<img src="{{ "images/portifolio.png" | absURL }}" alt="home page" style="width:100%; display: block; margin: 0 auto;">
 
 This portfolio is hosted using **[GitHub Pages](https://pages.github.com/)** — a free and simple way to serve static sites directly from a GitHub repository.
 
