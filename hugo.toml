@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://thurunany.github.io/projetos-porti"'
 languageCode = 'en-us'
 title = 'Meu portifolio'
 [markup]
@@ -7,4 +7,3 @@ title = 'Meu portifolio'
       unsafe = true
 
 ignoreLogs = ["warning-goldmark-raw-html"]
-baseURL = "https://thurunany.github.io/projetos-porti"
