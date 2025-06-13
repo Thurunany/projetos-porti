@@ -6,7 +6,7 @@
   {{ range .Pages }}
   <div class="w3-third w3-container w3-margin-bottom">
     <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" style="width:100%" class="w3-hover-opacity">
-    <div class="w3-container w3-white">
+    <div class="w3-container w3-white"> 
       <p><b>{{ .Title }}</b></p>
       <p>{{ .Params.description }}</p>
       <a href="{{ .RelPermalink }}" class="w3-button w3-teal w3-small w3-round">Read more</a>

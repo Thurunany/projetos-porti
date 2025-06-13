@@ -1,7 +1,7 @@
 +++
 date = '2025-06-12T17:30:09-03:00'
 draft = false
-image = "/images/Codeforces.png"
+image = "/projetos-porti/images/Codeforces.png"
 description = "Repository for coding problems"
 title = 'Problem-Solving'
 +++
@@ -20,7 +20,7 @@ The problems are organized by platform and topics:
 - LEETCODE
 
 
-<img src="{{ "images/repo-code.png" | absURL }}" alt="home page" style="width:100%; display: block; margin: 0 auto;">
+<img src={{ "images/repo-code.png" | absURL }}" alt="home page" style="width:100%; display: block; margin: 0 auto;">
 
 ---
 
