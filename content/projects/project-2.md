@@ -20,7 +20,7 @@ The problems are organized by platform and topics:
 - LEETCODE
 
 
-<img src={{ "images/repo-code.png" | absURL }}" alt="home page" style="width:100%; display: block; margin: 0 auto;">
+<img src="{{ "images/repo-code.png" | absURL }}" alt="home page" style="width:100%; display: block; margin: 0 auto;">
 
 ---
 
