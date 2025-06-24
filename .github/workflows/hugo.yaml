@@ -62,8 +62,13 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"    
-      - name: Check Hugo site
-        run: hugo check
+      - name: Run htmltest (verifica links quebrados)
+        run: |
+          wget https://github.com/wjdp/htmltest/releases/download/v0.17.0/htmltest-linux-amd64.tar.gz
+          tar -xzf htmltest-linux-amd64.tar.gz
+          sudo mv htmltest /usr/local/bin/
+          htmltest --skip-external
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
