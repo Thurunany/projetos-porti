@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thurunany.github.io/projetos-porti/</loc>
+    <loc>http://localhost:1313/projetos-porti/</loc>
     <lastmod>2025-06-12T21:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://thurunany.github.io/projetos-porti/projects/project-1/</loc>
+    <loc>http://localhost:1313/projetos-porti/projects/project-1/</loc>
     <lastmod>2025-06-12T21:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://thurunany.github.io/projetos-porti/projects/</loc>
+    <loc>http://localhost:1313/projetos-porti/projects/</loc>
     <lastmod>2025-06-12T21:00:00-03:00</lastmod>
   </url><url>
-    <loc>https://thurunany.github.io/projetos-porti/projects/project-2/</loc>
+    <loc>http://localhost:1313/projetos-porti/projects/project-2/</loc>
     <lastmod>2025-06-12T17:30:09-03:00</lastmod>
   </url><url>
-    <loc>https://thurunany.github.io/projetos-porti/categories/</loc>
+    <loc>http://localhost:1313/projetos-porti/categories/</loc>
   </url><url>
-    <loc>https://thurunany.github.io/projetos-porti/tags/</loc>
+    <loc>http://localhost:1313/projetos-porti/tags/</loc>
   </url>
 </urlset>

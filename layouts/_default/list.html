@@ -1,16 +1,18 @@
 {{ define "main" }}
-<p></p>
-<h1 class="w3-container"><b>My Projects</b></h1>
 
 <div class="w3-row-padding">
+  <h1 class="w3-container"><b>My Projects</b></h1>
   {{ range .Pages }}
-  <div class="w3-third w3-container w3-margin-bottom">
-    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" style="width:100%" class="w3-hover-opacity">
-    <div class="w3-container w3-white"> 
+  <div class="w3-third w3-container w3-margin-bottom" style="height: 450px;">
+    <div style="height: 250px; overflow: hidden;">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}"
+          style="width: 100%; height: 100%; object-fit: cover;"
+          class="w3-hover-opacity w3-round">
+    </div>
+    <div class="w3-container w3-white" style="height: 200px;">
       <p><b>{{ .Title }}</b></p>
-      <p>{{ .Params.description }}</p>
+      <p style="max-height: 90px; overflow: hidden;">{{ .Params.description }}</p>
       <a href="{{ .RelPermalink }}" class="w3-button w3-teal w3-small w3-round">Read more</a>
-      <p></p>
     </div>
   </div>
   
