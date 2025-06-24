@@ -64,8 +64,14 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"    
       - name: Install htmlhint
         run: npm install -g htmlhint
-      - name: Run htmlhint on generated HTML
+      - name: Run htmlhint (verifica qualidade do html)
         run: htmlhint "public/**/*.html" || true 
+      - name: Run htmltest (verifica links quebrados)
+        run: |
+          wget https://github.com/wjdp/htmltest/releases/download/v0.16.0/htmltest_0.16.0_linux_amd64.tar.gz
+          tar -xzf htmltest_0.16.0_linux_amd64.tar.gz
+          sudo mv htmltest /usr/local/bin/
+          htmltest -v
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,0 +1,4 @@
+DirectoryPath: ./public
+IgnoreURLs:
+  - https://thurunany.github.io/projetos-porti/images/yo.jpg
+CheckExternal: true
