@@ -62,12 +62,11 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"    
-      - name: Run htmltest (verifica links quebrados)
-        run: |
-          wget https://github.com/wjdp/htmltest/releases/download/v0.16.0/htmltest_0.16.0_linux_amd64.tar.gz
-          tar -xzf htmltest_0.16.0_linux_amd64.tar.gz
-          sudo mv htmltest /usr/local/bin/
-          htmltest ./public --skip-external
+      - name: Install htmlhint
+        run: npm install -g htmlhint
+
+      - name: Run htmlhint on generated HTML
+        run: htmlhint "public/**/*.html"
 
 
 
