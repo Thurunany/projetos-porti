@@ -67,7 +67,8 @@ jobs:
           wget https://github.com/wjdp/htmltest/releases/download/v0.16.0/htmltest_0.16.0_linux_amd64.tar.gz
           tar -xzf htmltest_0.16.0_linux_amd64.tar.gz
           sudo mv htmltest /usr/local/bin/
-          htmltest --skip-external
+          htmltest ./public --skip-external
+
 
 
       - name: Upload artifact
